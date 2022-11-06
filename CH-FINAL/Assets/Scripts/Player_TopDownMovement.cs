@@ -16,7 +16,7 @@ public class Player_TopDownMovement : MonoBehaviour
     void Update()
     {
         MovementInput();
-
+        RotationInput();
     }
 
     void MovementInput()
@@ -29,4 +29,17 @@ public class Player_TopDownMovement : MonoBehaviour
 
     }
 
+    void RotationInput()
+    {
+        RaycastHit _hit;
+        Ray _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(_ray, out _hit))
+        {
+            transform.LookAt(new Vector3(_hit.point.x, transform.position.y, _hit.point.z));
+
+        }
+
+
+    }
 }
