@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public static int playerHP;
+    public static int playerHP = 100;
     public static bool dead;
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +17,16 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(playerHP);
+
         if(dead)
         {
             Debug.Log("La Quedutti!");
+            Destroy(Player);
         }
     }
 
-    public void TakeDamage(int damageAmount)
+    public static void TakeDamage(int damageAmount)
     {
         playerHP -= damageAmount;
         if(playerHP <= 0)

@@ -7,6 +7,10 @@ public class Enemy : MonoBehaviour
     private float lookingSpeed = 2f;
     private float MovingSpeed;
     public float AttackRange = 1f;
+
+    /* Attacking */
+    public float radius = 5f;
+    public int damageAmount = 15;
     
     void Start()
     {
@@ -49,5 +53,20 @@ public class Enemy : MonoBehaviour
         MovingSpeed = 0;
         }
         
-    }    
+    }
+
+
+    /* Attacking */
+    private void OnCollisionEnter(Collision collision)
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        foreach(Collider nearbyObject in colliders)
+        {
+            if(nearbyObject.tag == "Player")
+            {
+                PlayerManager.TakeDamage(damageAmount);
+                Debug.Log("Player HP: " + damageAmount);
+            }
+        }
+    }
 }
