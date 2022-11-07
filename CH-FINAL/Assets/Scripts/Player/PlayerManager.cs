@@ -7,22 +7,28 @@ public class PlayerManager : MonoBehaviour
     public static int playerHP = 100;
     public static bool dead;
     public GameObject Player;
+    private Animator animator;
 
-    // Start is called before the first frame update
     void Start()
     {
         dead = false;
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Debug.Log(playerHP);
-
+        //Buscar la forma de no usar Destroy, sino que anule el movimiento del Player al morir para ver la animacion de muerte
         if(dead)
         {
             Debug.Log("La Quedutti!");
             Destroy(Player);
+
+            animator.SetBool("IsDead", true);
+        }
+        else
+        {
+            animator.SetBool("IsDead", false);
         }
     }
 
@@ -32,6 +38,7 @@ public class PlayerManager : MonoBehaviour
         if(playerHP <= 0)
         {
             dead = true;
+
         }
     }
 }

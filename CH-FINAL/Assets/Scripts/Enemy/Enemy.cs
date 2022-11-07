@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
     
     void Update()
@@ -47,14 +47,15 @@ public class Enemy : MonoBehaviour
         {
         transform.position = Vector3.MoveTowards(transform.position, posPlayer.position, MovingSpeed * Time.deltaTime);
         MovingSpeed = 2f;
-        animator.SetBool("IsMoving", true);
+        animator.SetBool("ZIsMoving", true);
+        animator.SetBool("ZIsAttacking", false);
         }
 
         if(dist <= AttackRange)
         {
         MovingSpeed = 0;
-        animator.SetBool("IsMoving", false);
-
+        animator.SetBool("ZIsMoving", false);
+        animator.SetBool("ZIsAttacking", true);
         }
         
     }
@@ -70,7 +71,9 @@ public class Enemy : MonoBehaviour
             {
                 PlayerManager.TakeDamage(damageAmount);
                 Debug.Log("Player HP: " + damageAmount);
-            }
+                
+            }        
+            
         }
     }
 }
