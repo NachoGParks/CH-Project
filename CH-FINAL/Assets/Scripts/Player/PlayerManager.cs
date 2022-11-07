@@ -17,7 +17,6 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(playerHP);
         //Buscar la forma de no usar Destroy, sino que anule el movimiento del Player al morir para ver la animacion de muerte
         if(dead)
         {

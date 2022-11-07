@@ -9,6 +9,7 @@ public class PlayerGun : MonoBehaviour
     public GameObject impacto;
     public int ShotDamage;
     private Animator animator;
+    public AudioSource Fire;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerGun : MonoBehaviour
         {
             Disparar();
             animator.SetBool("IsFiring", true);
+            Fire.Play();
         }
         else
         {
