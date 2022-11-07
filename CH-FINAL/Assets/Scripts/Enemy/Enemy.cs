@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
     private float dist;
     private float lookingSpeed = 2f;
     private float MovingSpeed;
-    public float AttackRange = 1f;
+    public float AttackRange = 1.5f;
     public int zombieHP = 90;
     public bool dead;
     public int damageTaken = 30;
@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         dead = false;
-
+        animator = GetComponent<Animator>();
     }
     
     void Update()
@@ -58,14 +58,12 @@ public class Enemy : MonoBehaviour
         {
         transform.position = Vector3.MoveTowards(transform.position, posPlayer.position, MovingSpeed * Time.deltaTime);
         MovingSpeed = 2f;
-        animator.SetBool("ZIsMoving", true);
         animator.SetBool("ZIsAttacking", false);
         }
 
         if(dist <= AttackRange)
         {
         MovingSpeed = 0;
-        animator.SetBool("ZIsMoving", false);
         animator.SetBool("ZIsAttacking", true);
         }
         
@@ -98,4 +96,4 @@ public class Enemy : MonoBehaviour
         }
         }
     }
-}
+
