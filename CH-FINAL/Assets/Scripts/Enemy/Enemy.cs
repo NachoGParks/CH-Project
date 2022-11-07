@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     private float lookingSpeed = 2f;
     private float MovingSpeed;
     public float AttackRange = 1f;
+    private Animator animator;
 
     /* Attacking */
     public float radius = 5f;
@@ -46,11 +47,14 @@ public class Enemy : MonoBehaviour
         {
         transform.position = Vector3.MoveTowards(transform.position, posPlayer.position, MovingSpeed * Time.deltaTime);
         MovingSpeed = 2f;
+        animator.SetBool("IsMoving", true);
         }
 
         if(dist <= AttackRange)
         {
         MovingSpeed = 0;
+        animator.SetBool("IsMoving", false);
+
         }
         
     }

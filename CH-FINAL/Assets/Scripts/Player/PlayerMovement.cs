@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private Animator animator;
     [SerializeField]
     private float movementSpeed;
 
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
 
     void Update()
     {
         MovementInput();
+       
         RotationInput();
     }
 
@@ -26,7 +28,14 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 _movement = new Vector3(_horizontal, 0, _vertical);
         transform.Translate(_movement * movementSpeed * Time.deltaTime, Space.World);
-
+        if (_movement != Vector3.zero)
+        {
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
 
     void RotationInput()
