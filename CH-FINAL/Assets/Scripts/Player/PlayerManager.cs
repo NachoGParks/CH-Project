@@ -17,8 +17,7 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(playerHP);
-
+        
         if(dead)
         {
             Debug.Log("La Quedutti!");
@@ -29,6 +28,8 @@ public class PlayerManager : MonoBehaviour
     public static void TakeDamage(int damageAmount)
     {
         playerHP -= damageAmount;
+        Debug.Log("Player HP= " + playerHP);
+
         if(playerHP <= 0)
         {
             dead = true;
