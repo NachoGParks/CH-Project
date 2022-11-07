@@ -7,15 +7,20 @@ public class Enemy : MonoBehaviour
     private float lookingSpeed = 2f;
     private float MovingSpeed;
     public float AttackRange = 1f;
+    public int zombieHP = 90;
+    public bool dead;
+    public int damageTaken = 30;
+    public GameObject Zombie;
     private Animator animator;
 
     /* Attacking */
-    public float radius = 5f;
+    public float radius = 1f;
     public int damageAmount = 15;
     
     void Start()
     {
-        animator = GetComponent<Animator>();
+        dead = false;
+
     }
     
     void Update()
@@ -23,6 +28,12 @@ public class Enemy : MonoBehaviour
         CheckDistance();
         LookAtPlayer();
         FollowPlayer();
+
+        if(dead)
+        {
+            Debug.Log("Enemigo Abatido");
+            Destroy(Zombie);
+        }
         
     }
 
@@ -70,10 +81,21 @@ public class Enemy : MonoBehaviour
             if(nearbyObject.tag == "Player")
             {
                 PlayerManager.TakeDamage(damageAmount);
-                Debug.Log("Player HP: " + damageAmount);
-                
-            }        
-            
+                Debug.Log("Damage taken: " + damageAmount);
+            }
+
+            if (nearbyObject.tag == "Impact")
+            {
+                zombieHP -= damageTaken;
+                Debug.Log("Enemy HP: " + zombieHP);
+
+                if (zombieHP <= 0)
+                {
+                    dead = true;
+                }
+            }
+
+        }
         }
     }
 }
