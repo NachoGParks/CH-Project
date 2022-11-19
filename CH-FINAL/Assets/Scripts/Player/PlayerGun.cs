@@ -33,7 +33,7 @@ public class PlayerGun : MonoBehaviour
             if(hit.transform.CompareTag("Zombie"))
             {
                 GameObject go = Instantiate(impacto, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy (go, 0.1f);
+                Destroy (go, 0.2f);
             }
         }
     }

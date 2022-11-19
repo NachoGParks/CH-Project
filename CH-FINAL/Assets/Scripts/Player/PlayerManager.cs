@@ -19,8 +19,7 @@ public class PlayerManager : MonoBehaviour
     {
         
         if(dead)
-        {
-            Debug.Log("La Quedutti!");
+        {            
             Destroy(Player);
         }
     }
@@ -33,6 +32,7 @@ public class PlayerManager : MonoBehaviour
         if(playerHP <= 0)
         {
             dead = true;
+            Debug.Log("La Quedutti!");
         }
     }
 }
