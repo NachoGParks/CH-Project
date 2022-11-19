@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public static int playerHP = 100;
+    public static float playerHP = 100f;
     public static bool dead;
     public GameObject Player;
 
@@ -24,12 +24,12 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public static void TakeDamage(int damageAmount)
+    public static void TakeDamage(float damageAmount)
     {
         playerHP -= damageAmount;
         Debug.Log("Player HP= " + playerHP);
 
-        if(playerHP <= 0)
+        if(playerHP <= 0f)
         {
             dead = true;
             Debug.Log("La Quedutti!");

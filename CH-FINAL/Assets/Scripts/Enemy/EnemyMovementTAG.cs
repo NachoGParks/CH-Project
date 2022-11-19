@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemyMovementTAG : MonoBehaviour
 {
     private GameObject target;
     public NavMeshAgent agent;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,9 @@ public class EnemyMovementTAG : MonoBehaviour
         if(dead)
         {            
             Destroy(agent);
+
         }
+      
     }
 
     /* Attacking */
@@ -32,6 +36,7 @@ public class EnemyMovementTAG : MonoBehaviour
     public int zombieHP = 90;    
     public int damageTaken = 30;
     public bool dead;
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -48,10 +53,13 @@ public class EnemyMovementTAG : MonoBehaviour
         
                 if(zombieHP <= 0)
                 {
+                   
                     Debug.Log("Enemigo Abatido");
                     dead = true;
-                }                
-            }
+                    InGameHUD.dead_Zombies++;
+
+                    }
+                }
         }
         }
     }    
