@@ -8,25 +8,19 @@ public class PlayerGun : MonoBehaviour
     public GameObject rayCastStart;
     public GameObject impacto;
     public int ShotDamage;
-    private Animator animator;
-    public AudioSource Fire;
 
+    // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
             Disparar();
-            animator.SetBool("IsFiring", true);
-            Fire.Play();
-        }
-        else
-        {
-            animator.SetBool("IsFiring", false);
         }
     }
 
@@ -39,7 +33,7 @@ public class PlayerGun : MonoBehaviour
             if(hit.transform.CompareTag("Zombie"))
             {
                 GameObject go = Instantiate(impacto, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy (go, 0.1f);
+                Destroy (go, 0.2f);
             }
         }
     }
