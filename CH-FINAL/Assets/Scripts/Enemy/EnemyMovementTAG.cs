@@ -27,8 +27,7 @@ public class EnemyMovementTAG : MonoBehaviour
         {            
             Destroy(agent);
 
-        }
-      
+        }      
     }
 
     /* Attacking */
@@ -38,21 +37,21 @@ public class EnemyMovementTAG : MonoBehaviour
     public bool dead;
     
 
-    private void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
         
         if(dead != true)
         {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
-        foreach(Collider nearbyObject in colliders)
-        {            
-            if(nearbyObject.tag == "Impact")
-            {                
-                zombieHP -= damageTaken;
-                Debug.Log("Enemy HP: " + zombieHP);
+            Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+            foreach(Collider nearbyObject in colliders)
+            {            
+                if(nearbyObject.tag == "Impact")
+                {                
+                    zombieHP -= damageTaken;
+                    Debug.Log("Enemy HP: " + zombieHP);
         
-                if(zombieHP <= 0)
-                {
+                    if(zombieHP <= 0)
+                    {
                    
                     Debug.Log("Enemigo Abatido");
                     dead = true;
@@ -60,7 +59,7 @@ public class EnemyMovementTAG : MonoBehaviour
 
                     }
                 }
-        }
+            }
         }
     }    
 }
