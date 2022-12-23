@@ -3739,7 +3739,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 2
+  m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3762,14 +3762,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.15636145, y: -0.1962667, z: 0.16872153, w: 0.953186}
+  m_LocalRotation: {x: 0.56515205, y: -0.046452653, z: 0.3689416, w: 0.73642886}
   m_LocalPosition: {x: 2.3191671, y: 5.9, z: 2.7919497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1711919996}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.365, y: -20.189, z: 16.229}
+  m_LocalEulerAnglesHint: {x: 60.073, y: 44.327, z: 79.727}
 --- !u!4 &712291946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4499816892524640, guid: 06753a6d88829a743b949538f6b79249, type: 3}
