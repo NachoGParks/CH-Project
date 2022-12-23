@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6459924447795536179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.68, y: 0, z: 6.65}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}
       propertyPath: m_LocalPosition.y
@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.52
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}
       propertyPath: m_LocalRotation.w
@@ -465,19 +465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 15
   varGral: {fileID: 6459924447421301925}
---- !u!114 &6459924447421301932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6153934552695159282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35bddc816f66dcb4a9a0b694a478c2ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombre: Norman
 --- !u!4 &6786074108000330568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}
