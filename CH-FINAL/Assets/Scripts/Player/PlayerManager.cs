@@ -1,36 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
-{
-    public static float playerHP = 100f;
-    public static bool dead;
-    public GameObject Player;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        dead = false;
-    }
+{   //VARIABLES
 
-    // Update is called once per frame
-    void Update()
+    //Stats
+    public GameObject player;
+    public float playerHP = 100f;
+    public bool playerDead = false;
+
+    //Ataque
+    public float playerDamage = 30f;
+
+    //Defensa
+    public EnemyManager enemyManager; 
+
+
+    public void playerDies()
     {
-        
-        if(dead)
-        {            
-            Destroy(Player);
+        if(playerHP <= 0f)
+        {
+            playerDead = true;
+            Debug.Log("La Quedutti!");
         }
     }
 
-    public static void TakeDamage(float damageAmount)
-    {
-        playerHP -= damageAmount;
-        Debug.Log("Player HP= " + playerHP);
 
-        if(playerHP <= 0f)
-        {
-            dead = true;
-            Debug.Log("La Quedutti!");
+
+
+
+    void Start()
+    {
+        playerDead = false;        
+    }
+
+    void Update()
+    {        
+        if(playerDead)
+        {            
+            Destroy(player);
         }
     }
 }

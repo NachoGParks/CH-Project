@@ -9,18 +9,19 @@ public class InGameHUD : MonoBehaviour
 
     [Header("HealthBar")]
     public Image healthBar;
-    public float playerHP;
+    public float HUDplayerHP;
     public float MaxHP = 100f;
 
     #endregion
+    public PlayerManager playerManager;
 
 
     void Update()
     {
         KillCount.text = "ENEMIES KILLED = " + dead_Zombies.ToString();;
-        playerHP = PlayerManager.playerHP;
+        HUDplayerHP = playerManager.playerHP;
 
-        healthBar.fillAmount = playerHP / MaxHP;
+        healthBar.fillAmount = HUDplayerHP / MaxHP;
     }
 
 
