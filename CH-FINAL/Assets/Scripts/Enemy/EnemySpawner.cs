@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     private Vector3 SP04pos;
 
 
-    private float Interval01 = 3.5f;
+    private float Interval01 = 5.5f;
 
     // Start is called before the first frame update
     void Start()
