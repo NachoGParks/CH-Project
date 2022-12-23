@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6459924447795536180}
   m_Layer: 0
-  m_Name: Zombies
+  m_Name: Zombies 1
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,28 +412,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2273717783849838079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6153934552695159282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d882b2f176f0f6a44942f71076c2bc50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 6459924447421301926}
-  demonHP: 90
-  demonDead: 0
-  playerManager: {fileID: 0}
-  demonDamage: 10
-  distToPlayer: 0
-  timeToShoot: 3
-  timeToShootLeft: 0
-  radius: 1
-  playerGUN: {fileID: 7741311786240032372, guid: d725df7710e65fe4baa6407e16139d8a, type: 3}
 --- !u!195 &6459924447421301926
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -468,6 +446,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9675dc1a55e95a144bdad9a561f39eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2273717783849838079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153934552695159282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d882b2f176f0f6a44942f71076c2bc50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  demonHP: 90
+  demonDead: 0
+  playerManager: {fileID: 0}
+  demonDamage: 10
+  radius: 1
+  playerGUN: {fileID: 0}
 --- !u!4 &6786074108000330568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}
