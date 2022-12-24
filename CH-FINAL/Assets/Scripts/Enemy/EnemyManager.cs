@@ -12,6 +12,7 @@ public class EnemyManager : MonoBehaviour
     public NavMeshAgent agent;
     public float demonHP = 90f;    
     public bool demonDead = false;
+    private Animator animator;    
 
     //Ataque
     private GameObject target;    
@@ -42,8 +43,6 @@ public class EnemyManager : MonoBehaviour
     }
 
     //Ataque
-
-
     public void Attack()
     {
         if (!demonDead)
@@ -51,10 +50,13 @@ public class EnemyManager : MonoBehaviour
             timeToShootLeft -= Time.deltaTime;
             if (timeToShootLeft <= 0f && distToPlayer <= 1.5f)
             {                
-                target.GetComponent<PlayerManager>().playerHP -= 10f;
-
-                timeToShootLeft = timeToShoot;
-                Debug.Log("Attacked");
+                target.GetComponent<PlayerManager>().playerHP -= demonDamage;
+                animator.SetBool("isAttacking", true);
+                timeToShootLeft = timeToShoot;                
+            }
+            else
+            {
+                animator.SetBool("isAttacking", false);
             }
         }
     }
@@ -89,13 +91,14 @@ public class EnemyManager : MonoBehaviour
         if (demonDead)
         {
             Destroy(agent);
-            //insertar animacion de muerte aca!!!!!!!!!!!!!!!!!!!!!!!!!
+            Destroy(gameObject.GetComponent<CapsuleCollider>());
         }
     }
 
     void Start()
     {
-        target = GameObject.FindWithTag("Player");        
+        target = GameObject.FindWithTag("Player");
+        animator = GetComponent<Animator>();
     }
 
     void Update()

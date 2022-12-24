@@ -4,7 +4,8 @@ public class PlayerAnimations : MonoBehaviour
 {   
     Animator anim;
 
-    private float movementSpeed;  
+    private float movementSpeed;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,4 @@ public class PlayerAnimations : MonoBehaviour
 
         }
     }
-
-
 }

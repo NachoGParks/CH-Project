@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9675dc1a55e95a144bdad9a561f39eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyManager: {fileID: 2273717783849838079}
 --- !u!4 &6786074108000330568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4468a17d48d99da439783921151ce664, type: 3}

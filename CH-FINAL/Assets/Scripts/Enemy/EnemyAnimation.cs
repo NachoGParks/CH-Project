@@ -4,6 +4,7 @@ public class EnemyAnimation : MonoBehaviour
 {
     private Animator animator;
     private Vector3 movementDirection;
+    public EnemyManager enemyManager;    
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +14,10 @@ public class EnemyAnimation : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        enemyAnimDies();
+        //enemyAnimAttack();        
+
         if (transform.hasChanged)
         {            
             animator.SetBool("isRunning", true);
@@ -22,6 +26,22 @@ public class EnemyAnimation : MonoBehaviour
         else
         {
             animator.SetBool("isRunning", false); 
+        }
+    }
+
+    public void enemyAnimDies()
+    {
+        if(enemyManager.demonDead)
+        {
+            animator.SetBool("isDed", true);
+        }
+    }
+
+    public void enemyAnimAttack()
+    {
+        if(enemyManager.timeToShootLeft <= 0f && enemyManager.distToPlayer <= 1.5f)
+        {
+            animator.SetBool("isAttacking", true);
         }
     }
 }
