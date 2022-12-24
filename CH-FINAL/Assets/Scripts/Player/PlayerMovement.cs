@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveInput;
     float forwardAmount;
     float turnAmount;
+    public PlayerManager playerManager;
 
     void Start()
     {
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
+        playerAnimDies();
+
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit;
@@ -84,5 +87,13 @@ public class PlayerMovement : MonoBehaviour
     {
         anim.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
         anim.SetFloat("Sideways", turnAmount, 0.1f, Time.deltaTime);
+    }
+
+    public void playerAnimDies()
+    {
+        if (playerManager.playerHP <= 0f)
+        {
+            anim.SetBool("PlayerDied", true);
+        }
     }
 }

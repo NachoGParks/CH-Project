@@ -16,6 +16,7 @@ public class EnemyAnimation : MonoBehaviour
     void Update()
     {
         enemyAnimDies();
+        //enemyAnimAttack();        
 
         if (transform.hasChanged)
         {            
@@ -38,6 +39,9 @@ public class EnemyAnimation : MonoBehaviour
 
     public void enemyAnimAttack()
     {
-
+        if(enemyManager.timeToShootLeft <= 0f && enemyManager.distToPlayer <= 1.5f)
+        {
+            animator.SetBool("isAttacking", true);
+        }
     }
 }
