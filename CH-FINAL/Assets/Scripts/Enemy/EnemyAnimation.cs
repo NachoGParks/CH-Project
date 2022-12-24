@@ -35,4 +35,9 @@ public class EnemyAnimation : MonoBehaviour
             animator.SetBool("isDed", true);
         }
     }
+
+    public void enemyAnimAttack()
+    {
+
+    }
 }

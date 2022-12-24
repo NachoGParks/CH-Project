@@ -89,7 +89,8 @@ public class EnemyManager : MonoBehaviour
     {
         if (demonDead)
         {
-            Destroy(agent);                     
+            Destroy(agent);
+            Destroy(gameObject.GetComponent<CapsuleCollider>());
         }
     }
 
