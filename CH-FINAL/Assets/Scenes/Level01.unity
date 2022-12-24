@@ -8445,6 +8445,10 @@ PrefabInstance:
       propertyPath: impacto
       value: 
       objectReference: {fileID: 6786282232716798939}
+    - target: {fileID: 7741311786240032376, guid: d725df7710e65fe4baa6407e16139d8a, type: 3}
+      propertyPath: playerManager
+      value: 
+      objectReference: {fileID: 241534569}
     - target: {fileID: 7741311786240032378, guid: d725df7710e65fe4baa6407e16139d8a, type: 3}
       propertyPath: playerHP
       value: 100
