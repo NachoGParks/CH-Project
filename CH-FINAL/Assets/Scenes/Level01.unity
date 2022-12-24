@@ -4404,7 +4404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1033323659
 Transform:
   m_ObjectHideFlags: 0
@@ -8445,6 +8445,10 @@ PrefabInstance:
       propertyPath: impacto
       value: 
       objectReference: {fileID: 6786282232716798939}
+    - target: {fileID: 7741311786240032376, guid: d725df7710e65fe4baa6407e16139d8a, type: 3}
+      propertyPath: playerManager
+      value: 
+      objectReference: {fileID: 241534569}
     - target: {fileID: 7741311786240032378, guid: d725df7710e65fe4baa6407e16139d8a, type: 3}
       propertyPath: playerHP
       value: 100
