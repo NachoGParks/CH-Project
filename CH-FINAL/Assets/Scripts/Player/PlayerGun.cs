@@ -6,11 +6,13 @@ public class PlayerGun : MonoBehaviour
     public GameObject rayCastStart;
     public GameObject impacto;
     public int ShotDamage;
+    public ParticleSystem muzzleFlash;
+    public AudioSource shootingSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+      shootingSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,8 @@ public class PlayerGun : MonoBehaviour
 
     void Disparar()
     {
+        muzzleFlash.Play();
+        shootingSound.Play();
         RaycastHit hit;
         if(Physics.Raycast(rayCastStart.transform.position, rayCastStart.transform.forward, out hit, range))
         {
@@ -34,5 +38,5 @@ public class PlayerGun : MonoBehaviour
                 Destroy (go, 0.2f);
             }
         }
-    }
+    }   
 }
