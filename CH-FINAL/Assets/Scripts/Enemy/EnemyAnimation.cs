@@ -14,7 +14,9 @@ public class EnemyAnimation : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        
+    {
+        enemyAnimDies();
+
         if (transform.hasChanged)
         {            
             animator.SetBool("isRunning", true);
@@ -23,6 +25,14 @@ public class EnemyAnimation : MonoBehaviour
         else
         {
             animator.SetBool("isRunning", false); 
+        }
+    }
+
+    public void enemyAnimDies()
+    {
+        if(enemyManager.demonDead)
+        {
+            animator.SetBool("isDed", true);
         }
     }
 }

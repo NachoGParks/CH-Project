@@ -12,7 +12,7 @@ public class EnemyManager : MonoBehaviour
     public NavMeshAgent agent;
     public float demonHP = 90f;    
     public bool demonDead = false;
-    private Animator animator;
+    private Animator animator;    
 
     //Ataque
     private GameObject target;    
@@ -89,9 +89,7 @@ public class EnemyManager : MonoBehaviour
     {
         if (demonDead)
         {
-            Destroy(agent);
-            animator.SetBool("isDed", true);
-            //insertar animacion de muerte aca!!!!!!!!!!!!!!!!!!!!!!!!!
+            Destroy(agent);                     
         }
     }
 
