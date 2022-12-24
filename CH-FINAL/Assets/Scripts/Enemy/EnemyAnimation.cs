@@ -4,26 +4,19 @@ public class EnemyAnimation : MonoBehaviour
 {
     private Animator animator;
     private Vector3 movementDirection;
-    private GameObject target;
-    private float dist;
-    public int damageAmount = 15;
-	private float timeToShoot = 3f;
-	private float timeToShootLeft;
-    public EnemyMovementTAG varGral;
+    public EnemyManager enemyManager;    
 
     // Start is called before the first frame update
     void Start()
-    {
-        ResetTimer();
-        animator = GetComponent<Animator>();
-        target = GameObject.FindWithTag("Player");
+    {        
+        animator = GetComponent<Animator>();        
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckDistance();
-        Temporizador();      
+        enemyAnimDies();
+        //enemyAnimAttack();        
 
         if (transform.hasChanged)
         {            
@@ -36,31 +29,19 @@ public class EnemyAnimation : MonoBehaviour
         }
     }
 
-    void CheckDistance()
+    public void enemyAnimDies()
     {
-        dist = Vector3.Distance(target.transform.position, transform.position);
-    }
-
-    private void ResetTimer()
-	{
-		timeToShootLeft = timeToShoot;
-	}
-
-    private void Shoot()
-    {
-        PlayerManager.TakeDamage(damageAmount);
-        Debug.Log("Damage taken: " + damageAmount);
-    }
-
-    private void Temporizador()
-	{
-		if(varGral.dead != true)
+        if(enemyManager.demonDead)
         {
-            timeToShootLeft -= Time.deltaTime;
-            if(timeToShootLeft <= 0 && dist <= 1.5) {
-                Shoot();
-                ResetTimer();					
-            }
+            animator.SetBool("isDed", true);
         }
-	}
+    }
+
+    public void enemyAnimAttack()
+    {
+        if(enemyManager.timeToShootLeft <= 0f && enemyManager.distToPlayer <= 1.5f)
+        {
+            animator.SetBool("isAttacking", true);
+        }
+    }
 }

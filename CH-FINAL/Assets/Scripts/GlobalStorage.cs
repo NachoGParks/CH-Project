@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GlobalStorage : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+{   //VARIABLES
+    public float playerHP = 100f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
