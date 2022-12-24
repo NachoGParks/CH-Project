@@ -8347,6 +8347,10 @@ PrefabInstance:
       propertyPath: playerManager
       value: 
       objectReference: {fileID: 241534569}
+    - target: {fileID: 6459924447421301931, guid: 43ed1121ef249f9438fb2f5fe86ea1bb, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 919132148311607667}
     - target: {fileID: 6459924447795536179, guid: 43ed1121ef249f9438fb2f5fe86ea1bb, type: 3}
       propertyPath: m_Name
       value: Zombies
