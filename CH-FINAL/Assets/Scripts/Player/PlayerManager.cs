@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject player;
     public float playerHP = 100f;
     public bool playerDead = false;
+    public int TagsFound;
 
     //Ataque
     public float playerDamage = 30f;
