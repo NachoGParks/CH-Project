@@ -96,4 +96,15 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("PlayerDied", true);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.gameObject.tag == "Coin")
+        {
+            playerManager.TagsFound++;
+            playerManager.playerHP = 100f;
+            Destroy(other.transform.gameObject);
+            Debug.Log("Cantidad de Tags encontrados: " + playerManager.TagsFound);
+        }
+    }
 }
