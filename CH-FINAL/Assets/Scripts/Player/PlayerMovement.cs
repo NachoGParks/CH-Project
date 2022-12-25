@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        cam = Camera.main.transform;        
+        cam = Camera.main.transform;     
     }
 
     
@@ -81,7 +81,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 localMove = transform.InverseTransformDirection(moveInput);
 
         turnAmount = localMove.x;
-        forwardAmount = localMove.z;        
+        forwardAmount = localMove.z; 
+        
     }
     void UpdateAnimator()
     {

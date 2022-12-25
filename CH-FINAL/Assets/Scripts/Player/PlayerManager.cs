@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 
@@ -26,7 +27,7 @@ public class PlayerManager : MonoBehaviour
         if(playerHP <= 0f)
         {
             playerDead = true;
-            Debug.Log("La Quedutti!");
+            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
     }
 
@@ -41,9 +42,6 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {        
-        if(playerDead)
-        {            
-            Destroy(player);
-        }
+        playerDies();
     }
 }
