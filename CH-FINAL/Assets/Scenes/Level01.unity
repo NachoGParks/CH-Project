@@ -421,7 +421,7 @@ Transform:
   - {fileID: 543450653466878345}
   - {fileID: 7844640882951158012}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &92046213
 PrefabInstance:
@@ -799,6 +799,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4186571022478722, guid: 00bbd7bbb63ef7149a38d214388ac850, type: 3}
   m_PrefabInstance: {fileID: 156032020}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &177353322
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.548617
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.032608032
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.783575
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.39440945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9189348
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -133.542
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_Name
+      value: Vanguard By T. Choonyung@Death From Back Headshot (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
 --- !u!1001 &181376416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1543,7 +1600,7 @@ Transform:
   m_Children:
   - {fileID: 2064781748}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &373162021 stripped
 Transform:
@@ -1687,7 +1744,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &440916141 stripped
 Transform:
@@ -3531,6 +3588,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4774652072035690, guid: f6d52b00702899a4c97ce9a8742bb6e6, type: 3}
   m_PrefabInstance: {fileID: 1478290355}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &835304000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.029774114
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9867874
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0013854501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.16196376
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0040653264
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.232
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 18.641
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.434
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_Name
+      value: Vanguard By T. Choonyung@Death From Back Headshot (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
 --- !u!4 &849090614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4168858863378548, guid: d15f260e64138674b9c202ff5a16d61a, type: 3}
@@ -4422,7 +4536,7 @@ Transform:
   - {fileID: 734300600}
   - {fileID: 934008546}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1033323660
 MonoBehaviour:
@@ -4552,7 +4666,7 @@ Transform:
   - {fileID: 1112778727}
   - {fileID: 951127881}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1107891634 stripped
 Transform:
@@ -4655,6 +4769,63 @@ Transform:
   m_Father: {fileID: 1078783928}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1115403409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -34.235
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.032598734
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.272
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_Name
+      value: Vanguard By T. Choonyung@Death From Back Headshot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
 --- !u!1001 &1119050982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5305,6 +5476,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4300806633890268, guid: b3ac32377b55790499ee46dce188cbb7, type: 3}
   m_PrefabInstance: {fileID: 1328142635}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1333044989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.974022
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.032601357
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.57962
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.75396025
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6569201
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 82.131
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_Name
+      value: Vanguard By T. Choonyung@Death From Back Headshot (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
 --- !u!1001 &1365082504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6280,6 +6508,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53592d8be5aa30d4ba3337adbdf5ad33, type: 3}
+--- !u!1001 &1610346712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.401394
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.030070305
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -48.23389
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.88241965
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.47046334
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -56.129
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_Name
+      value: Vanguard By T. Choonyung@Death From Back Headshot (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
 --- !u!1 &1632514686
 GameObject:
   m_ObjectHideFlags: 0
@@ -6624,7 +6909,7 @@ Transform:
   - {fileID: 563220300}
   - {fileID: 2078992729}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1727996048
 PrefabInstance:
@@ -7459,7 +7744,7 @@ RectTransform:
   - {fileID: 210658781}
   - {fileID: 518113714}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7713,6 +7998,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4168858863378548, guid: d15f260e64138674b9c202ff5a16d61a, type: 3}
   m_PrefabInstance: {fileID: 1913442892}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2020110593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.557287
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03260517
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.9735694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5185159
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.855068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -117.535
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
+      propertyPath: m_Name
+      value: Vanguard By T. Choonyung@Death From Back Headshot (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e65a7cd2828c9e64d89de29173c7ad2d, type: 3}
 --- !u!1001 &2020969546
 PrefabInstance:
   m_ObjectHideFlags: 0
