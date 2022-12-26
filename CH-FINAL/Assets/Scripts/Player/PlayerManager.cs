@@ -43,5 +43,9 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {        
         playerDies();
+        if (TagsFound == 6)
+        {
+            SceneManager.LoadScene("Victory", LoadSceneMode.Single);
+        }
     }
 }
